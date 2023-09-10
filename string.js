@@ -52,7 +52,7 @@ if (bmi > 24.9){
 }}
 bmiCalculator (65 , 1.5) ;*/
 
-function leapYear(year){
+/* function leapYear(year){
     if (year % 4 === 0) {
         if (year % 100 === 0){
          if (year % 400 === 0){
@@ -66,4 +66,4 @@ function leapYear(year){
     {return "false ";}
     }
 
-    console.log(leapYear(2000))
+    console.log(leapYear(2000)) */
