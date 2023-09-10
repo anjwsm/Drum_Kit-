@@ -39,17 +39,31 @@ bmiCalculator (65,1.5); */
 // var n = Math.random();
 // console.log(n);
 
-function bmiCalculator(weight , height){
+/* function bmiCalculator(weight , height){
 var bmi = weight/(height*height);
-    return bmi;
-}
 if (bmi < 18.5 ) {
     console.log ("Your BMI is " + bmi +" ,so you are underweight ")
 }
-if (18.5<= bmi <= 24.9){
+if (bmi>=18.5 && bmi<= 24.9){
     console.log ("Your BMI is " + bmi +" ,so you have a normal weight ")
 }
 if (bmi > 24.9){
     console.log ("Your BMI is " + bmi +" ,so you are overweight ")
-}
-bmiCalculator (65 , 1.5) ;
+}}
+bmiCalculator (65 , 1.5) ;*/
+
+function leapYear(year){
+    if (year % 4 === 0) {
+        if (year % 100 === 0){
+         if (year % 400 === 0){
+            return "true";
+         }
+         else { return "false" ; }
+        }
+        else {return "false ";}
+    }
+    else 
+    {return "false ";}
+    }
+
+    console.log(leapYear(2000))
