@@ -67,3 +67,30 @@ bmiCalculator (65 , 1.5) ;*/
     }
 
     console.log(leapYear(2000)) */
+
+    // var guestList = ["Anjali" , "Gia","Abhi" , "Priya" ,"Sia"];
+    // guestList.includes("Sia");
+
+     var output = [];
+    var count = 1;
+    function fizzbuzz {
+        whileCount == 100 {
+        if (count % 3 === 0 && count % 5 === 0){
+            output.push("fizzbuzz");
+        }
+        else if (count % 3 === 0){
+            output.push("fizz");
+        }
+        else if (count % 5 === 0){
+            output.push("buzz");
+        }
+        else {
+            output.push(count);
+        }
+        count++ ;
+        }
+        console.log(output);
+    }
+    fizzbuzz();
+    
+
