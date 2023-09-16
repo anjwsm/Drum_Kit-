@@ -36,12 +36,15 @@ console.log('drums',document.querySelectorAll(".drum"));
     // });
 
     playTheMusic(e.target.innerHTML);
+    buttonAnimation(e.target.innerHTML);
     
- });}
+ });
+}
 
  //for keys
 document.addEventListener('keydown',function(e){
     playTheMusic(e.key);
+    buttonAnimation(e.key);
     // let audioUrl="./sounds/tom-1.mp3";
     // switch(e.key){
     //     case 'w':{ audioUrl="./sounds/tom-2.mp3"; break;}
@@ -56,3 +59,14 @@ document.addEventListener('keydown',function(e){
     // let audio = new Audio(audioUrl);
     // audio.play();
 });
+
+function buttonAnimation(currentKey){
+    let activeButton = document.querySelector("." + currentKey);
+
+    activeButton.classList.add("pressed");
+
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    } , 100 );
+
+}
